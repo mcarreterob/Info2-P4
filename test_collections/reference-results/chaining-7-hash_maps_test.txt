@@ -1,0 +1,104 @@
+Using max capacity:  7
+
+Putting 10
+Map
+===
+ 10  10
+
+Putting 20
+Map
+===
+ 20  20
+ 10  10
+
+Putting 11
+Map
+===
+ 20  20
+ 10  10
+ 11  11
+
+Putting 30
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 11  11
+
+Putting 21
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 21  21
+ 11  11
+
+Putting 15
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 21  21
+ 11  11
+ 15  15
+
+Putting 16
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 21  21
+ 11  11
+ 15  15
+ 16  16
+
+Putting 40
+Full_Map
+
+Putting 25
+Full_Map
+
+Putting 50
+Full_Map
+
+Deleting 11
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 21  21
+ 15  15
+ 16  16
+
+Deleting 15
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 21  21
+ 16  16
+
+Deleting 25
+Element not found!
+
+Getting 21
+Value: 21
+Map
+===
+ 30  30
+ 20  20
+ 10  10
+ 21  21
+ 16  16
+
+Getting 40
+Element not found!
+
+Getting 50
+Element not found!

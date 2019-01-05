@@ -1,0 +1,135 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnvnnnnnnvnnnnnnnvnnvnnnvvnnnnvnnnnnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U ordered_test%b	ordered_test.adb	533bf79f NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W cl_parameters%s	cl_parameters.adb	cl_parameters.ali
+W ordered_maps_g%s	ordered_maps_g.adb	ordered_maps_g.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-numeri.ads		20080324174807 bb51c45a
+D a-nudira.ads		20100622172941 2fef2912
+D a-nudira.adb		20100622172941 e57ce22b
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101008130255 fe8d9a91
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D cl_parameters.ads	20180130132732 a4c2fce2
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D ordered_maps_g.ads	20180609094840 c4af93ea
+D ordered_maps_g.adb	20180609094824 04a859e2
+D ordered_test.adb	20180609094850 da59dec0
+D system.ads		20140416172212 2d1a1afa
+D s-conca2.ads		20090420091404 fbd0f2fc
+D s-conca3.ads		20090420091404 762a026a
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-parame.ads		20091130110856 9c5d83fa
+D s-rannum.ads		20100623054052 5eb33f0a
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 23|1r6 2r6 3r6 9r25 10r25 23r7 24r7 27r10 36r7 42r10 49r7 53r10
+. 56r10 64r7 70r10
+X 8 a-numeri.ads
+16K13*Numerics 32e17 23|3r10
+X 9 a-nudira.ads
+44k22*Discrete_Random 73e33 23|3w19
+X 12 a-string.ads
+16K13*Strings 35e16 23|2r10 9r29
+X 14 a-strunb.ads
+39K21*Unbounded 437e26 23|2w18 9r37
+X 16 a-textio.ads
+49K13*Text_IO 472e16 23|1w10 10r29 23r11 24r11 27r14 36r11 42r14 49r11 53r14
+. 56r14 64r11 70r14
+167U14*New_Line 23|36s19 49s19 64s19
+264U14*Put_Line 23|23s19 24s19 27s22 37s12 42s22 50s12 53s22 56s22 65s12
+. 70s22 79s9
+X 18 cl_parameters.ads
+1K9*CL_Parameters 3e18 23|5w6 11r25
+2V13*Max_Items{natural} 23|17s58 79s62
+X 21 ordered_maps_g.ads
+2+14 Key_Type 23|13r40
+3+14 Value_Type 23|14r40
+4V23 "="{boolean} 23|15r40
+5V23 "<"{boolean} 23|16r40
+6i9 Max{natural} 23|17r40
+8k9*Ordered_Maps_G 63e19 23|4w6 13r24
+9R14 Map 23|20r34[13] 34r37[13] 45r37[13] 61r40[13] 76r17[13]
+10X9 Full_Map 23|41r17[13]
+12U19 Get 23|51s12[13]
+17U19 Put 23|38s12[13]
+21U19 Delete 23|66s12[13]
+32R14 Cursor 23|21r15[13]
+33V18 First{32R14[23|13]} 23|21s30[13]
+34U19 Next 23|29s15[13]
+35V18 Has_Element{boolean} 23|26s18[13]
+36R14 Element_Type
+37i17 Key{integer} 23|27r62[13]
+38i17 Value{integer} 23|28r62[13]
+43V18 Element{36R14[23|13]} 23|27s51[13] 28s51[13]
+X 23 ordered_test.adb
+8U11*Ordered_Test 8b11 103l5 103t17
+9K12 ASU=9:37
+10K12 ATIO=10:29 37r7 50r7 65r7 79r4
+11K12 CLP=11:25 17r54 79r58
+13K12 Maps[21|8] 20r29 21r10 21r25 26r13 27r46 28r46 29r10 34r32 38r7 41r12
+. 45r32 51r7 61r35 66r7 76r12
+20U14 Print_Map 20b14 20>25 31l8 31t17 39s7 54s10 68s10
+20r25 M{21|9R14[13]} 21r36
+21r7 C{21|32R14[13]} 26r30 27r59 28r59 29m20
+34U14 Do_Put 34b14 34=22 34>42 34>54 43l8 43t14 82s4 83s4 84s4 85s4 86s4
+. 87s4 88s4 89s4 90s4 91s4
+34r22 M{21|9R14[13]} 38m17 39r17
+34i42 K{natural} 37r47 38r20
+34i54 V{natural} 38r23
+45U14 Do_Get 45b14 45=22 45>42 58l8 58t14 99s4 100s4 101s4
+45r22 M{21|9R14[13]} 51m17 54r20
+45i42 K{natural} 50r47 51r20
+46i7 V{natural} 51m23 53r56
+47b7 Success{boolean} 51m26 52r10
+61U14 Do_Delete 61b14 61=25 61>45 72l8 72t17 94s4 95s4 96s4
+61r25 M{21|9R14[13]} 66m20 68r20
+61i45 K{natural} 65r48 66r23
+62b7 Success{boolean} 66m26 67r10
+76r4 A_Map{21|9R14[13]} 82m12 83m12 84m12 85m12 86m12 87m12 88m12 89m12 90m12
+. 91m12 94m15 95m15 96m15 99m12 100m12 101m12
+

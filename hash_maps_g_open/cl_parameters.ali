@@ -1,0 +1,42 @@
+V "GNAT Lib v4.6"
+P SS ZX
+R nnnnnnnnnnnnnnnnnnvnnvnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U cl_parameters%b	cl_parameters.adb	581d2d56 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+
+U cl_parameters%s	cl_parameters.ads	a4c2fce2 EE NE OO PK
+
+D ada.ads		20070406091342 3ffc8e18
+D a-comlin.ads		20100623092347 e0accaa5
+D a-except.ads		20090727140100 0c711ac9
+D a-unccon.ads		20070406091342 f9eb8f06
+D cl_parameters.ads	20180130132732 a4c2fce2
+D cl_parameters.adb	20180130132702 1c731b11
+D system.ads		20140416172212 2d1a1afa
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-traent.ads		20090417130712 5221ee41
+D s-valint.ads		20090409150019 48a52a3f
+X 1 ada.ads
+16K9*Ada 19e8 6|1r6 4r25
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 6|1w10 4r29
+41V13*Argument_Count{natural} 6|10s14
+48V13*Argument{string} 6|14s32
+X 5 cl_parameters.ads
+1K9*CL_Parameters 3l5 3e18 6|3b14 20l5 20t18
+2V13*Max_Items{natural} 6|8b13 18l8 18t17
+X 6 cl_parameters.adb
+4K12 ACL=4:29 10r10 14r28
+6N4 MAX_CAPACITY_DEFAULT 11r17 17r39
+

@@ -1,0 +1,55 @@
+
+Longitud de la tabla de símbolos:  0
+Map
+===
+
+Longitud de la tabla de símbolos:  1
+Map
+===
+facebook.com 69.63.189.16
+
+Get: NO hay una entrada para la clave www.urjc.es
+
+Longitud de la tabla de símbolos:  2
+Map
+===
+facebook.com 69.63.189.16
+google.com 66.249.92.104
+
+Longitud de la tabla de símbolos:  3
+Map
+===
+facebook.com 69.63.189.16
+google.com 66.249.92.104
+www.urjc.es 212.128.240.25
+
+Longitud de la tabla de símbolos:  3
+Map
+===
+facebook.com 69.63.189.11
+google.com 66.249.92.104
+www.urjc.es 212.128.240.25
+
+Get: Dirección IP de www.urjc.es: 212.128.240.25
+
+Delete: BORRADO google.com
+
+Longitud de la tabla de símbolos:  2
+Map
+===
+facebook.com 69.63.189.11
+www.urjc.es 212.128.240.25
+
+Delete: BORRADO www.urjc.es
+
+Longitud de la tabla de símbolos:  1
+Map
+===
+facebook.com 69.63.189.11
+
+Delete: bbb.bbb.bbb no encontrado
+
+Longitud de la tabla de símbolos:  1
+Map
+===
+facebook.com 69.63.189.11
