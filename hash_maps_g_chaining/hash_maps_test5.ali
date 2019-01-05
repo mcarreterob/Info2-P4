@@ -1,0 +1,137 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnvnnnnnnvnnnnnnnvnnvnnnvvnnvnvnnvnnnnnnvnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U hash_maps_test5%b	hash_maps_test5.adb	7d7a6c37 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization.list_controller%s  a-filico.adb  a-filico.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.unchecked_deallocation%s
+W hash_maps_g%s		hash_maps_g.adb		hash_maps_g.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101008130255 fe8d9a91
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D hash_maps_g.ads	20180530171842 4ce7b991
+D hash_maps_g.adb	20180621111040 effb6f3a
+D hash_maps_test5.adb	20180530182048 f77dbae3
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20140416172212 2d1a1afa
+D s-conca2.ads		20090420091404 fbd0f2fc
+D s-conca3.ads		20090420091404 762a026a
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 18|1r6 2r6 6r25 7r25 35r7 36r7 39r10
+X 9 a-string.ads
+16K13*Strings 35e16 18|2r10 6r29
+X 11 a-strunb.ads
+39K21*Unbounded 437e26 18|2w18 6r37
+42R9*Unbounded_String 404e14 18|14r33 24r55 25r55 46r18
+47V13*Length{natural} 18|17s23
+57V13*To_Unbounded_String{42R9} 18|59s18 60s18 69s25 77s25 78s19 86s19 87s19
+. 95s19 96s19 104s25 113s28 126s28 139s28
+63V13*To_String{string} 18|18s37 39s36 40s38 72s28 107s28
+129V13*"="{boolean}<5|64p24> 18|26r55
+137V13*"="{boolean} 18|26r55
+X 13 a-textio.ads
+49K13*Text_IO 472e16 18|1w10 7r29 35r11 36r11 39r14
+167U14*New_Line 18|53s9 62s9 68s9 80s9 89s9 98s9 103s9 112s9 120s9 125s9
+. 133s9 138s9 146s9
+264U14*Put_Line 18|35s19 36s19 39s22 54s9 63s9 71s12 74s12 81s9 90s9 99s9
+. 106s12 109s12 115s12 117s12 121s9 128s12 130s12 134s9 141s12 143s12 147s9
+X 16 hash_maps_g.ads
+2+14 Key_Type 18|24r37
+3+14 Value_Type 18|25r37
+4V23 "="{boolean} 18|26r37
+5M14 Hash_Range 18|28r37
+6V23 Hash{5M14} 18|29r37
+7i9 Max{natural} 18|27r37
+8k9*Hash_Maps_G 63e16 18|3w6 24r24
+9R14 Map 18|32r34[24] 49r17[24]
+11U19 Get 18|69s9[24] 104s9[24]
+15U19 Put 18|58s9[24] 77s9[24] 85s9[24] 94s9[24]
+18U19 Delete 18|113s9[24] 126s9[24] 139s9[24]
+22V18 Map_Length{natural} 18|55s40[24] 64s40[24] 82s40[24] 91s40[24] 100s40[24]
+. 122s40[24] 135s40[24] 148s40[24]
+26R14 Cursor 18|33r15[24]
+27V18 First{26R14[18|24]} 18|33s30[24]
+28U19 Next 18|41s15[24]
+29V18 Has_Element{boolean} 18|38s18[24]
+30R14 Element_Type
+31r17 Key{11|42R9} 18|39r62[24]
+32r9 Value{11|42R9} 18|40r64[24]
+36V18 Element{30R14[18|24]} 18|39s51[24] 40s53[24]
+X 18 hash_maps_test5.adb
+5U11*Hash_Maps_Test5 5b11 153l5 153t20
+6K12 ASU=6:37 14r29 17r19 18r33 24r51 25r51 26r51 39r32 40r34 46r14 59r14
+. 60r14 69r21 72r24 77r21 78r15 86r15 87r15 95r15 96r15 104r21 107r24 113r24
+. 126r24 139r24
+7K12 ATIO=7:29 53r4 54r4 62r4 63r4 68r4 71r7 74r7 80r4 81r4 89r4 90r4 98r4
+. 99r4 103r4 106r7 109r7 112r4 115r7 117r7 120r4 121r4 125r4 128r7 130r7
+. 133r4 134r4 138r4 141r7 143r7 146r4 147r4
+9N4 HASH_SIZE 12r27
+10N4 MAGIC_PRIME 18r56
+12M9 Hash_Range 14r58 15r10 18r70 28r51
+14V13 String_Hash{12M9} 14b13 14>26 21l8 21t19 29r45
+14r26 S{11|42R9} 17r30 18r47
+15m7 R{12M9} 18m10 18r15 20r14
+17i11 I{integer} 18r50 18r81
+24K12 Maps[16|8] 32r29 33r10 33r25 38r13 39r46 40r48 41r10 49r12 55r35 58r4
+. 64r35 69r4 77r4 82r35 85r4 91r35 94r4 100r35 104r4 113r4 122r35 126r4 135r35
+. 139r4 148r35
+32U14 Print_Map 32b14 32>25 43l8 43t17 65s4 83s4 92s4 101s4 123s4 136s4 149s4
+32r25 M{16|9R14[24]} 33r36
+33r7 C{16|26R14[24]} 38r30 39r59 40r61 41m20
+46r4 Value{11|42R9} 69m62 72r38 104m62 107r38
+47b4 Success{boolean} 69m69 70r7 104m69 105r7 113m63 114r7 126m64 127r7 139m64
+. 140r7
+49r4 A_Map{16|9R14[24]} 55r51 58m14 64r51 65r14 69m14 77m14 82r51 83r14 85m14
+. 91r51 92r14 94m14 100r51 101r14 104m14 113m17 122r51 123r14 126m17 135r51
+. 136r15 139m17 148r51 149r15
+
