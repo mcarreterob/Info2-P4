@@ -23,7 +23,7 @@ package Hash_Maps_G is
 	--
 	-- Cursor Interface for iterating over Map elements
 	--
-	type Cursor is private;
+	type Cursor is limited private;
 	function First (M: Map) return Cursor;
 	procedure Next (C: in out Cursor);
 	function Has_Element (C: Cursor) return Boolean;
