@@ -40,7 +40,31 @@ package body Hash_Maps_G is
 				end if;
 			end loop;
 		end if;
+	
 	end Get;
+
+	procedure Delete (M : in out Map;
+						Key : in Key_Type;
+						Success : out Boolean) is
+		Index : Hash_Range;
+	begin
+		Index := Hash(Key);
+		Success := False;
+		if M.P_Array(Index).Key = Key then
+			M.P_Array(Index).Condition := Delete;
+			M.Length := M.Length - 1;
+			Success := True;	
+		else
+			while Index < Hash_Range'Last and not Success loop
+				Index := Index + 1;
+				if M.P_Array(Index).Key = Key then
+					M.P_Array(Index).Condition := Delete;
+					M.Length := M.Length - 1;
+					Success := True;
+				end if;
+			end loop;
+		end if;
+	end Delete;
 
 	procedure Put (M : in out Map;
 					Key : Key_Type;
@@ -91,29 +115,6 @@ package body Hash_Maps_G is
 		end if;
 	end Put;
 
-	procedure Delete (M : in out Map;
-						Key : in Key_Type;
-						Success : out Boolean) is
-		Index : Hash_Range;
-	begin
-		Index := Hash(Key);
-		Success := False;
-		if M.P_Array(Index).Key = Key then
-			M.P_Array(Index).Condition := Delete;
-			M.Length := M.Length - 1;
-			Success := True;	
-		else
-			while Index < Hash_Range'Last and not Success loop
-				Index := Index + 1;
-				if M.P_Array(Index).Key = Key then
-					M.P_Array(Index).Condition := Delete;
-					M.Length := M.Length - 1;
-					Success := True;
-				end if;
-			end loop;
-		end if;
-	end Delete;
-
 function Map_Length (M:Map) return Natural is   
     begin
         return M.Length;
@@ -135,10 +136,11 @@ function Map_Length (M:Map) return Natural is
 		return C;
 	end First;
 
-   procedure Next (C: in out Cursor) is
+
+    procedure Next (C: in out Cursor) is
 		Index : Hash_Range := Hash_Range(C.Index) + 1;
 		Found : Boolean := False;
-   begin
+    begin
 		while Index < (Hash_Range'Last) and not Found loop
 			if C.M.P_Array(Index).Condition /= Full then --and C.M.P_Array(Index).Condition /= Full loop
 				Index := Index + 1;
@@ -152,26 +154,25 @@ function Map_Length (M:Map) return Natural is
 			C.Index := -1;
 		end if;
 	end Next;
-	
-   function Has_Element (C:Cursor) return Boolean is
+    function Has_Element (C:Cursor) return Boolean is
 		Bool: Boolean := False;
-   begin
+    begin
 
 		if C.Index /= -1 then
 			Bool := True;
 		end if;
 		return Bool;
-   end Has_Element;
+    end Has_Element;
 
-   function Element (C:Cursor) return Element_Type is
-      Elem: Element_Type;
-   begin
-      if not Has_Element(C) then
-         raise No_Element;
-      end if;
-      Elem.Key := C.M.P_Array(Hash_Range(C.Index)).Key;
-      Elem.Value := C.M.P_Array(Hash_Range(C.Index)).Value;
-      return Elem;
-   end Element;
+    function Element (C:Cursor) return Element_Type is
+        Elem: Element_Type;
+    begin
+        if not Has_Element(C) then
+            raise No_Element;
+        end if;
+        Elem.Key := C.M.P_Array(Hash_Range(C.Index)).Key;
+        Elem.Value := C.M.P_Array(Hash_Range(C.Index)).Value;
+        return Elem;
+    end Element;
 
 end Hash_Maps_G;
