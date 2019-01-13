@@ -23,6 +23,17 @@ package body Ordered_Maps_G is
 		end loop;
 		return 1;
 	end Find_Index;
+	
+	procedure Get(M: in out Map; Key: in Key_Type; Value: out Value_Type; Success: out Boolean) is
+		Index: Integer;
+	begin
+		Success := False;
+		Index := Find_Index(M, Key);
+		if M.P_Array(Index).Key = Key then
+			Value := M.P_Array(Index).Value;
+			Success := True;
+		end if;
+	end Get;
 
 	procedure Put(M: in out Map; Key: Key_Type; Value: Value_Type) is
 		Left: Integer;
@@ -61,17 +72,6 @@ package body Ordered_Maps_G is
 		end if;
 	end Put;
 
-	procedure Get(M: in out Map; Key: in Key_Type; Value: out Value_Type; Success: out Boolean) is
-		Index: Integer;
-	begin
-		Success := False;
-		Index := Find_Index(M, Key);
-		if M.P_Array(Index).Key = Key then
-			Value := M.P_Array(Index).Value;
-			Success := True;
-		end if;
-	end Get;
-
 	procedure Delete(M: in out Map; Key: Key_Type; Success: out Boolean) is
 		Index: Integer;
 	begin
@@ -95,6 +95,15 @@ package body Ordered_Maps_G is
 		Index := 1;
 		return (M, Index);
 	end First;
+	
+	procedure Next(C: in out Cursor) is
+	begin
+		if C.Index = 0 or C.Index >= C.M.Length then
+			C.Index := 0;
+		else
+			C.Index := C.Index + 1;
+		end if;
+	end Next;
 
 	function Has_Element(C: Cursor) return Boolean is
 		Bool: Boolean;
@@ -106,16 +115,6 @@ package body Ordered_Maps_G is
 		end if;
 		return Bool;	
 	end Has_Element;
-
-	procedure Next(C: in out Cursor) is
-		
-	begin
-		if C.Index = 0 or C.Index >= C.M.Length then
-			C.Index := 0;
-		else
-			C.Index := C.Index + 1;
-		end if;
-	end Next;
 
 	function Element(C: Cursor) return Element_Type is
 		Elem: Element_Type;
