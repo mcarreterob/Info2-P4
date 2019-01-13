@@ -5,16 +5,22 @@ generic
 	type Hash_Range is mod <>;
 	with function Hash (K: Key_Type) return Hash_Range;
 	Max: in Natural;
+	
 package Hash_Maps_G is
+
 	type Map is limited private;
+	
 	Full_Map : exception;
+	
 	procedure Get (M : in out Map;
 					Key : in Key_Type;
 					Value : out Value_Type;
 					Success : out Boolean);
+					
 	procedure Put (M : in out Map;
 					Key : Key_Type;
 					Value : Value_Type);
+					
 	procedure Delete (M : in out Map;
 						Key : in Key_Type;
 						Success : out Boolean);
@@ -32,11 +38,15 @@ package Hash_Maps_G is
 	Value: Value_Type;
 	end record;
 	No_Element: exception;
+	
 	-- Raises No_Element if Has_Element(C) = False;
 	function Element (C: Cursor) return Element_Type;
+	
 private
 	type Cell;
+	
 	type Cell_A is access Cell;
+	
 	type Cell is record
 		Key : Key_Type;
         Value : Value_Type;
@@ -48,6 +58,7 @@ private
 	end record;
 	
 	type Array_Pointer is array (Hash_Range) of Pointer;
+	
 	type Pointer_Array is access Array_Pointer;
 
 	type Map is record

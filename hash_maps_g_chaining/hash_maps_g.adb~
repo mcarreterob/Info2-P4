@@ -147,6 +147,7 @@ package body Hash_Maps_G is
         return Elem;
     end Element;
     
+    
     function Has_Element (C:Cursor) return Boolean is
        Bool: Boolean;
     begin
